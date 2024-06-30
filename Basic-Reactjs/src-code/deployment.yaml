@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: my-app-container
-        image: aksregistery640.azurecr.io/my-aks-devops:39  # Replace with your ACR and image details
+        image: aksregistery640.azurecr.io/my-aks-devops:$(Build.BuildId)-latest # Replace with your ACR and image details
         ports:
         - containerPort: 80

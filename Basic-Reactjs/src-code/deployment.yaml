@@ -15,7 +15,6 @@ spec:
       containers:
       - name: my-app-container
         image: aksregistery640.azurecr.io/my-aks-devops:$(Build.BuildId)-latest
-        imagePullPolicy: always 
-         # Replace with your ACR and image details
+        imagePullPolicy: Always  # Corrected the value to "Always"
         ports:
         - containerPort: 80

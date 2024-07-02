@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-app-container
-        image: aksregistery640.azurecr.io/my-aks-devops:$(Build.BuildId)
+        image: aksregistery640.azurecr.io/my-aks-devops:__BUILD_ID__
         imagePullPolicy: Always
         ports:
         - containerPort: 80
